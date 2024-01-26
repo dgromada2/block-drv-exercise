@@ -35,5 +35,6 @@ ccflags-y := -Wall -std=gnu99
 # ccflags-y += -DBLK_MQ_MODE
 # CFLAGS_sbdd.o := -DDEBUG
 
-sbdd-y := sbdd_common.o sbdd_memory.o sbdd_disk.o sbdd_main.o
+sbdd-y := sbdd_common.o sbdd_memory.o sbdd_disk.o
+sbdd-y += sbdd_raid1.o sbdd_main.o
 obj-m := sbdd.o

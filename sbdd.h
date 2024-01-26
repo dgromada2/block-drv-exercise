@@ -55,5 +55,6 @@ int sbdd_memory_init(struct sbdd *sbdd);
 void sbdd_memory_fini(void);
 
 int sbdd_disk_init(struct sbdd *sbdd);
+int sbdd_raid1_init(struct sbdd *sbdd);
 
 #endif /* _SBDD_H */

@@ -35,6 +35,12 @@ static struct sbdd_backstore_type __sbdd_backstore_types[] = {
 		.min_devs = 1,
 		.max_devs = 1,
 		.init = sbdd_disk_init
+	},
+	{
+		.mode = SBDD_MODE_RAID1,
+		.min_devs = 2,
+		.max_devs = 2,
+		.init = sbdd_raid1_init
 	}
 };
 

@@ -8,7 +8,7 @@ struct sbdd 	*__sbdd;
 int sbdd_disk_init(struct sbdd *sbdd)
 {
 	pr_err("disk mode is not supported along with multiqueue\n")
-	return -ENOTUP;
+	return -ENOTUPP;
 }
 
 #else   /* BLK_MQ_MODE */
